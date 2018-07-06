@@ -1,0 +1,27 @@
+{
+  "name": "PatientBuy",
+  "version": "1.0",
+  "description": "Exercise patience and avoid impulse buying.",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["PatientBuy.js"],
+  	"persistent": false
+  },
+  "options_page": "options.html",
+  "page_action": {
+  	"default_popup": "popup.html",
+	  "default_icon": {
+      "16": "images/PatientBuy_16.png",
+      "32": "images/PatientBuy_32.png",
+      "64": "images/PatientBuy_64.png",
+      "128": "images/PatientBuy_128.png"
+  	}
+  },
+  "icons": {
+  	"16": "images/PatientBuy_16.png",
+  	"32": "images/PatientBuy_32.png",
+  	"64": "images/PatientBuy_64.png",
+  	"128": "images/PatientBuy_128.png"
+  },
+  "manifest_version": 2
+}
