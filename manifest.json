@@ -1,8 +1,20 @@
 {
+  // Name of the extension
   "name": "PatientBuy",
+
+  // Version of the extension
   "version": "1.0",
-  "description": "Exercise patience and avoid impulse buying.",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+
+  // Description of the extention's functionality
+  "description": "Exercise patience and avoid impulse buying. Compatibility with Amazon only (for now).",
+
+  // Permissions determine the functionality of the extension, and what "functions" the extension is allowed
+  // to access. List of available permissions: https://developer.chrome.com/extensions/declare_permissions
+
+  // Edit: Added additional permission "contextMenus"
+  "permissions": ["activeTab", "declarativeContent", "storage", "contextMenus"],
+
+
   "background": {
     "scripts": ["PatientBuy.js"],
   	"persistent": false
